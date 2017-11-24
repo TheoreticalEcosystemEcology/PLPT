@@ -8,7 +8,7 @@ date: \today
 
 ## Main goals
 
-1. Easy generation of slides
+1. Easy generation of slides test 4
 2. Integration with `R` and `Julia`
 3. Looks nice
 
