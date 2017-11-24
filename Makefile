@@ -34,3 +34,15 @@ clean:
 install:
 	mkdir -p $(INSTALL_DIR)
 	cp *.sty $(INSTALL_DIR)
+
+font:
+	OS := $(shell uname)
+	if ($(OS),Darwin)
+		mv ./assets/Input_Fonts/* ~/Library/Fonts
+		rm -rf ./assets
+	else
+		mkdir -p ~/.fonts
+		mv ./assets/Input_Fonts/* ~/.fonts
+		fc-cache -fv
+		rm -rf ./assets
+	endif
