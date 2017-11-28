@@ -14,18 +14,30 @@ date: \today
 
 ## Fonts and spacing
 
-The document uses the \alert{Input} family:
+The document uses the \alert{Noto} family -- <https://www.google.com/get/noto/>
 
 Main body
-: Input Sans (or Serif) Condensed
+: Noto Sans (or Serif)
 
 Maths
-: $\text{Input Sans Narrow}$
+: $\text{Noto Sans}$
 
 Code
-: `Input Mono Compressed`
+: `Noto Mono`
 
 The linespread value has been increased to about $1.3$
+
+## Serif font theme
+
+The default font theme is sans serif. You can change the `template/pl.tex` first line to:
+
+~~~ latex
+@@ -1,4 +1,4 @@
+-\documentclass[11pt, compress, aspectratio=1610]{beamer}
++\documentclass[11pt, compress, aspectratio=1610, serif]{beamer}
+
+\usetheme{pl}
+~~~
 
 ## Colors
 
@@ -90,6 +102,7 @@ There is a customized color scheme for code highlighting.
 b, c = "abc", 'c'
 # This code does nothing (useful)
 for i in 1:10
+  rand()
   @elapsed println("i:\t$i")
 end
 ~~~
@@ -137,3 +150,39 @@ are no slides left.
 Documents `slides.Jmd` and `slides.Rmd` will be detected.
 
 They will be converted to `slides.md` using either `R`/`knitr` or `Julia`/`Weave.jl`.
+
+# Specific commands
+
+## Cropped images
+
+\begincols
+\column{0.68\textwidth}
+
+The `roundpicture` command will display a picture, resized to fit into a circle:
+
+~~~ latex
+\roundpicture{images/nb.png}{Optional text}
+~~~
+
+Note that the image \alert{must} be a square.
+
+\hfill\column{0.28\textwidth}
+
+\roundpicture{images/nb.png}{}
+
+\stopcols
+
+## Plain slide
+
+This will create a plain slide:
+
+~~~ markdown
+## {.plain}
+
+\plain{This is large text on the background image.}
+~~~
+
+Note that the text within the `\plain` command \alert{must be \LaTeX}.
+
+## {.plain}
+\plain{This is large text on the background image.}

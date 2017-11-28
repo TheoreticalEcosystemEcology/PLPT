@@ -11,10 +11,13 @@
 
 \RequirePackage{mathspec}
 \defaultfontfeatures{Mapping=tex-text,Ligatures={TeX,Common},Scale=MatchLowercase}
-\setmathfont(Digits,Latin,Greek){Input Sans Narrow}
-\setmainfont{Input Serif Condensed}
-\setsansfont{Input Sans Condensed}
-\setmonofont{Input Mono Compressed}
+
+% NOTE Other families that work well: Noto Sans/Mono, Ubuntu Sans/Mono, Fira Sans/Mono
+
+\setmathfont(Digits,Latin,Greek){Noto Sans}
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{Noto Sans Mono}
 
 \let\varepsilon\epsilon
 \let\varphi\phi
