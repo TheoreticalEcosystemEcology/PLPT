@@ -68,6 +68,12 @@
 \newcommand{\AlertTok}[1]{\textcolor[HTML]{FF3D00}{{#1}}}
 \newcommand{\ErrorTok}[1]{\textcolor[HTML]{DD2C00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{\textcolor[HTML]{212121}{{#1}}}
+\newcommand\smallcitation[1]{% command to add small citation in the corner
+\begin{textblock*}{\textwidth}(30pt,\textheight)
+	\raggedleft \small{#1}
+\end{textblock*}}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % background image
 \pgfdeclareimage[height=1.05\paperheight]{titlebackground}{background/$background$}

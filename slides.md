@@ -4,10 +4,10 @@ subtitle: Using pandoc, knitr, Weave, etc...
 author: Timothée Poisot
 institute: Université de Montréal
 date: \today
-background: background2
+background: background1
 babel-lang: english
 ---
-
+ 
 ## Main goals
 
 1. Easy generation of slides
@@ -173,6 +173,16 @@ Note that the image \alert{must} be a square.
 \roundpicture{images/nb.png}{}
 
 \stopcols
+
+## Citation
+
+To quickly add specific references in the corner of the slide:
+
+~~~ latex
+\smallcitation{Gravel et al. 2006 \textit{Ecol. Lett}}
+~~~
+
+\smallcitation{Gravel et al. 2006 \textit{Ecol. Lett}}
 
 ## Plain slide
 
