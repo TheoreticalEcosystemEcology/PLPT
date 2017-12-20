@@ -2,6 +2,19 @@
 
 \usetheme{pl}
 
+% Set language
+\usepackage{xstring}
+\newcommand{\Langue}[1]{%
+    \IfEqCase{#1}{%
+        {francais}{
+        \usepackage[utf8]{inputenc}
+        \usepackage[francais]{babel}
+        }%
+        {english}{\usepackage[english]{babel}}%
+    }[\PackageError{Langue}{Undefined option to language: #1}{}]%
+}%
+\Langue{$babel-lang$}
+
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{minted}

@@ -5,6 +5,7 @@ author: Timothée Poisot
 institute: Université de Montréal
 date: \today
 background: background2
+babel-lang: english
 ---
 
 ## Main goals
