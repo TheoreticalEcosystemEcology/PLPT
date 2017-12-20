@@ -2,7 +2,6 @@
 
 \usetheme{pl}
 
-\usepackage{tikz}
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{minted}
@@ -57,6 +56,9 @@
 \newcommand{\ErrorTok}[1]{\textcolor[HTML]{DD2C00}{\textbf{{#1}}}}
 \newcommand{\NormalTok}[1]{\textcolor[HTML]{212121}{{#1}}}
 
+% background image
+\pgfdeclareimage[height=1.05\paperheight]{titlebackground}{background/$background$}
+
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
@@ -89,7 +91,7 @@
   }
   \put(0,-145){%
       \begin{minipage}[b][4.5cm][t]{0.5\textwidth}
-          \color{white}\huge
+          \color{plST}\huge
               #1
       \end{minipage}
   }

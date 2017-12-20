@@ -5,9 +5,6 @@ OUTPUT=$(FILE)_final.pdf
 
 all: $(OUTPUT)
 
-background.png: makebackground.jl
-	julia $<
-
 .PHONY: clean install
 
 rmd2md: $(wildcard $(FILE).Rmd)
