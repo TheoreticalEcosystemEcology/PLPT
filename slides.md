@@ -4,6 +4,7 @@ subtitle: Using pandoc, knitr, Weave, etc...
 author: Timothée Poisot
 institute: Université de Montréal
 date: \today
+background: background2
 ---
 
 ## Main goals
